@@ -6,3 +6,6 @@ I did created rollnumber everytime using variables of middle ware for particular
 But I found bug like I can't use segregated routes and middlewares combinedly. I see only one of them is segregated and other must be used from index.js
 For eg If I segregate routes, I will write at what endpoint which Route should I follow
 If Iam using segregatted middleware I just export and import and use. Im just cleaning up index.js nothing more than that.
+Important Note:If am to use cors i.e external middleware then goto https://expressjs.com/en/resources/middleware/cors.html
+Ist install app.use(cors()) its applicable to all routes
+if I  want only 1route then app.use(cors({origin:"place the url"}))
